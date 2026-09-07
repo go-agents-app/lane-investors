@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "target": "list_rows",
+  "list": {
+    "id": "list_7e745c238bd9",
+    "name": "Lane investors",
+    "description": null,
+    "collectionId": "coll_c8a7e19e1f38",
+    "pageId": "58b73df6-78d3-4d33-96c0-2ba30f94c522",
+    "pipelineId": null,
+    "columns": [
+      {
+        "key": "name",
+        "label": "Name",
+        "type": "text",
+        "required": true,
+        "options": null
+      },
+      {
+        "key": "firm",
+        "label": "Firm",
+        "type": "text",
+        "required": true,
+        "options": null
+      },
+      {
+        "key": "check_size_range",
+        "label": "Check size range",
+        "type": "text",
+        "required": true,
+        "options": null
+      },
+      {
+        "key": "stage_focus",
+        "label": "Stage focus",
+        "type": "select",
+        "required": null,
+        "options": [
+          "pre_seed",
+          "seed",
+          "series_a",
+          "series_b_plus"
+        ]
+      },
+      {
+        "key": "sector_focus",
+        "label": "Sector focus",
+        "type": "text",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "geography",
+        "label": "Geography",
+        "type": "text",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "warm_intro_path",
+        "label": "Warm intro path",
+        "type": "text",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "status",
+        "label": "Status",
+        "type": "select",
+        "required": true,
+        "options": [
+          "sourced",
+          "contacted",
+          "meeting",
+          "passed",
+          "invested"
+        ]
+      },
+      {
+        "key": "source",
+        "label": "Source",
+        "type": "select",
+        "required": true,
+        "options": [
+          "manual",
+          "assisted"
+        ]
+      },
+      {
+        "key": "notes",
+        "label": "Notes",
+        "type": "text",
+        "required": null,
+        "options": null
+      },
+      {
+        "key": "last_contacted_at",
+        "label": "Last contacted",
+        "type": "text",
+        "required": null,
+        "options": null
+      }
+    ]
+  },
+  "recordsFile": "data/records.json",
+  "import": {
+    "writeMode": "append",
+    "idField": "records[].id",
+    "rowDataPath": "records[].data"
+  }
+}

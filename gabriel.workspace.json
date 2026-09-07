@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "scaffold": "list-builder",
+  "kind": "list",
+  "validators": [
+    {
+      "runner": "node",
+      "script": "scripts/validate-list.js",
+      "assetPath": "assets/list.json",
+      "mode": "required"
+    },
+    {
+      "runner": "node",
+      "script": "scripts/validate-records.js",
+      "assetPath": "data/records.json",
+      "mode": "if_asset_present"
+    }
+  ]
+}
